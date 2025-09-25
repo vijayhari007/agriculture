@@ -1,0 +1,51 @@
+fertilizer_id,fertilizer_name,brand,composition,nutrient_content,type,price_per_kg,availability,suitable_crops,application_method,dosage_per_hectare,season_preference
+1,Urea,IFFCO,46-0-0,Nitrogen 46%,Nitrogenous,6.5,High,"Rice,Wheat,Corn,Sugarcane",Broadcasting,130,All Seasons
+2,DAP,IFFCO,18-46-0,"Nitrogen 18%, Phosphorus 46%",Phosphatic,27.0,High,"Wheat,Rice,Cotton,Soybean",Drilling,100,Rabi/Kharif
+3,MOP,IPL,0-0-60,Potassium 60%,Potassic,17.5,Medium,"Potato,Sugarcane,Cotton,Banana",Broadcasting,80,All Seasons
+4,NPK 10-26-26,Coromandel,10-26-26,"N 10%, P 26%, K 26%",Complex,24.0,High,"Rice,Wheat,Cotton,Maize",Drilling,200,All Seasons
+5,SSP,GSFC,0-16-0,Phosphorus 16%,Phosphatic,8.5,High,"Groundnut,Sunflower,Mustard",Broadcasting,125,Rabi
+6,Ammonium Sulphate,FACT,21-0-0,"Nitrogen 21%, Sulphur 24%",Nitrogenous,12.0,Medium,"Rice,Tea,Coffee,Sugarcane",Broadcasting,150,Kharif
+7,Calcium Ammonium Nitrate,Yara,26-0-0,Nitrogen 26%,Nitrogenous,18.5,Medium,"Wheat,Barley,Vegetables",Top Dressing,120,Rabi
+8,Potassium Sulphate,SQM,0-0-50,"Potassium 50%, Sulphur 17%",Potassic,45.0,Low,"Tobacco,Potato,Fruits",Broadcasting,60,All Seasons
+9,NPK 20-20-0,Chambal,20-20-0,"Nitrogen 20%, Phosphorus 20%",Complex,22.0,High,"Maize,Sorghum,Bajra",Drilling,150,Kharif
+10,NPK 12-32-16,RCF,12-32-16,"N 12%, P 32%, K 16%",Complex,26.5,Medium,"Cotton,Soybean,Chili",Drilling,175,Kharif
+11,NPK 19-19-19,Nagarjuna,19-19-19,"N 19%, P 19%, K 19%",Complex,28.0,High,"Vegetables,Fruits,Flowers",Fertigation,100,All Seasons
+12,NPK 15-15-15,Krishak Bharati,15-15-15,"N 15%, P 15%, K 15%",Complex,25.0,High,"General Purpose",Broadcasting,200,All Seasons
+13,NPK 14-35-14,EID Parry,14-35-14,"N 14%, P 35%, K 14%",Complex,30.0,Medium,"Pulses,Oilseeds",Drilling,125,Rabi
+14,NPK 16-20-0,SPIC,16-20-0,"Nitrogen 16%, Phosphorus 20%",Complex,20.0,High,"Cereals,Millets",Broadcasting,175,Kharif
+15,NPK 17-17-17,Zuari,17-17-17,"N 17%, P 17%, K 17%",Complex,27.0,High,"Balanced Nutrition",Drilling,150,All Seasons
+16,Zinc Sulphate,Sulphur Mills,ZnSO4.7H2O,Zinc 21%,Micronutrient,65.0,Medium,"Rice,Wheat,Maize,Cotton",Soil Application,25,All Seasons
+17,Ferrous Sulphate,Greenstar,FeSO4.7H2O,Iron 19%,Micronutrient,45.0,Medium,"Citrus,Vegetables,Paddy",Soil Application,20,All Seasons
+18,Manganese Sulphate,Aries Agro,MnSO4.H2O,Manganese 30%,Micronutrient,85.0,Low,"Soybean,Wheat,Oats",Foliar Spray,5,All Seasons
+19,Copper Sulphate,Dhanuka,CuSO4.5H2O,Copper 25%,Micronutrient,120.0,Low,"Rice,Wheat,Sugarcane",Soil Application,8,All Seasons
+20,Boron,Borax India,H3BO3,Boron 17%,Micronutrient,180.0,Low,"Cotton,Sunflower,Mustard",Foliar Spray,2,All Seasons
+21,Magnesium Sulphate,Ravi Chemicals,MgSO4.7H2O,Magnesium 9.6%,Secondary,35.0,Medium,"Potato,Tomato,Chili",Fertigation,50,All Seasons
+22,Calcium Nitrate,Yara,Ca(NO3)2,Calcium 19%,Secondary,55.0,Medium,"Vegetables,Fruits",Fertigation,75,All Seasons
+23,Sulphur,Indian Farmers,Elemental S,Sulphur 90%,Secondary,15.0,High,"Oilseeds,Pulses",Broadcasting,40,Rabi
+24,Gypsum,Gujarat Mineral,CaSO4.2H2O,"Calcium 23%, Sulphur 18%",Secondary,8.0,High,"Groundnut,Cotton,Sugarcane",Broadcasting,500,All Seasons
+25,Rock Phosphate,Rajasthan State Mines,Ca3(PO4)2,Phosphorus 20%,Phosphatic,12.0,Medium,"Acid Soils",Broadcasting,200,All Seasons
+26,Bone Meal,Organic India,Organic,Phosphorus 12%,Organic,45.0,Low,"Vegetables,Fruits",Soil Mixing,100,All Seasons
+27,Neem Cake,Godrej Agrovet,Organic,"N 5%, Neem Oil 2%",Organic,25.0,Medium,"All Crops",Soil Application,200,All Seasons
+28,Vermicompost,Earth Worm,Organic,"N 1.5%, P 1%, K 1.5%",Organic,8.0,High,"All Crops",Soil Mixing,2500,All Seasons
+29,Farm Yard Manure,Local,Organic,"N 0.5%, P 0.2%, K 0.5%",Organic,2.0,High,"All Crops",Soil Application,10000,All Seasons
+30,Compost,Municipal,Organic,"N 1%, P 0.5%, K 1%",Organic,3.0,High,"All Crops",Soil Mixing,5000,All Seasons
+31,Liquid NPK,Multiplex,19-19-19,Water Soluble,Liquid,85.0,Medium,"Vegetables,Fruits,Flowers",Fertigation,25,All Seasons
+32,Liquid Urea,IFFCO,46-0-0,Nitrogen 46%,Liquid,12.0,High,"All Crops",Foliar Spray,50,All Seasons
+33,Humic Acid,Valagro,Organic,Humic Acid 12%,Bio-stimulant,150.0,Low,"All Crops",Soil/Foliar,10,All Seasons
+34,Seaweed Extract,Biostadt,Organic,Potassium 12%,Bio-stimulant,200.0,Low,"Vegetables,Fruits",Foliar Spray,5,All Seasons
+35,Amino Acid,Dhanuka,Organic,Free Amino Acids 40%,Bio-stimulant,180.0,Low,"Stress Conditions",Foliar Spray,3,All Seasons
+36,Phospho Bacteria,NCOF,Bio-fertilizer,Phosphorus Solubilizing,Biofertilizer,5.0,Medium,"All Crops",Seed Treatment,2,All Seasons
+37,Rhizobium,IARI,Bio-fertilizer,Nitrogen Fixing,Biofertilizer,5.0,Medium,"Legumes",Seed Treatment,1,All Seasons
+38,Azotobacter,State Bio,Bio-fertilizer,Nitrogen Fixing,Biofertilizer,5.0,Medium,"Non-Legumes",Seed Treatment,2,All Seasons
+39,VAM,Mycorrhiza,Bio-fertilizer,Phosphorus Uptake,Biofertilizer,8.0,Low,"All Crops",Soil Application,5,All Seasons
+40,Azospirillum,Tamil Nadu Bio,Bio-fertilizer,Nitrogen Fixing,Biofertilizer,5.0,Medium,"Cereals,Millets",Seed Treatment,2,All Seasons
+41,Potash Mobilizer,Karnataka Bio,Bio-fertilizer,Potassium Solubilizing,Biofertilizer,6.0,Low,"All Crops",Soil Application,2,All Seasons
+42,Lime,ACC,CaCO3,Calcium 40%,Soil Amendment,4.0,High,"Acid Soils",Broadcasting,1000,All Seasons
+43,Dolomite,Rajasthan Lime,CaMg(CO3)2,"Calcium 22%, Magnesium 12%",Soil Amendment,6.0,Medium,"Acid Soils",Broadcasting,800,All Seasons
+44,Elemental Sulphur,Hindusthan Zinc,S,Sulphur 99%,Soil Amendment,18.0,Medium,"Alkaline Soils",Broadcasting,200,All Seasons
+45,Ammonium Chloride,Tata Chemicals,NH4Cl,Nitrogen 25%,Nitrogenous,15.0,Medium,"Rice,Coconut",Broadcasting,100,Kharif
+46,Calcium Chloride,Solvay,CaCl2,Calcium 36%,Secondary,25.0,Low,"Vegetables,Fruits",Fertigation,50,All Seasons
+47,Potassium Chloride,Belaruskali,KCl,Potassium 60%,Potassic,16.0,High,"Sugar Crops",Broadcasting,80,All Seasons
+48,Sodium Nitrate,SQM,NaNO3,Nitrogen 16%,Nitrogenous,22.0,Low,"Vegetables",Fertigation,75,All Seasons
+49,Magnesium Oxide,Premier Magnesia,MgO,Magnesium 60%,Secondary,40.0,Low,"Deficient Soils",Broadcasting,25,All Seasons
+50,Chelated Iron,Valagro,Fe-EDTA,Iron 12%,Micronutrient,120.0,Medium,"Iron Deficient Crops",Foliar Spray,2,All Seasons

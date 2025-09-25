@@ -1,0 +1,51 @@
+crop_id,crop_name,variety,season,duration_days,nitrogen_req,phosphorus_req,potassium_req,ph_min,ph_max,temperature_min,temperature_max,rainfall_min,rainfall_max,yield_per_hectare,market_price_per_kg
+1,Rice,Basmati,Kharif,120,120,60,40,5.5,6.5,20,35,1000,2500,4.5,45
+2,Rice,Sona Masuri,Kharif,110,110,55,38,5.8,6.8,22,37,900,2200,4.2,38
+3,Rice,IR64,Kharif,115,115,58,42,5.6,6.6,21,36,950,2300,4.8,35
+4,Wheat,Durum,Rabi,130,150,80,60,6.0,7.5,10,25,300,800,3.2,25
+5,Wheat,Emmer,Rabi,125,145,75,55,6.2,7.8,12,27,350,750,3.0,28
+6,Wheat,Common,Rabi,120,140,70,50,6.0,7.5,8,24,400,900,3.5,22
+7,Corn,Sweet Corn,Kharif,90,180,90,80,6.0,7.0,18,32,500,1200,8.5,30
+8,Corn,Dent Corn,Kharif,100,175,85,75,6.2,7.2,20,34,600,1300,9.2,25
+9,Corn,Flint Corn,Kharif,95,170,88,78,6.0,7.0,19,33,550,1250,8.8,27
+10,Soybean,Glycine Max,Kharif,100,50,70,100,6.0,7.0,20,30,450,1000,2.8,55
+11,Soybean,Black Soybean,Kharif,105,55,75,105,6.2,7.2,22,32,500,1100,2.5,60
+12,Cotton,Gossypium,Kharif,180,120,60,80,5.8,8.0,21,32,500,1250,1.8,85
+13,Cotton,Bt Cotton,Kharif,160,110,55,75,6.0,8.2,23,34,600,1300,2.2,90
+14,Tomato,Determinate,All Season,90,200,100,150,6.0,7.0,18,29,400,800,25.0,20
+15,Tomato,Indeterminate,All Season,120,220,110,160,6.2,7.2,20,31,450,850,30.0,22
+16,Potato,Russet,Rabi,100,150,80,200,5.2,6.4,15,24,300,600,22.0,15
+17,Potato,Red,Rabi,90,140,75,190,5.4,6.6,17,26,350,650,20.0,18
+18,Potato,Fingerling,Rabi,85,135,70,180,5.2,6.4,16,25,325,625,18.0,25
+19,Sugarcane,Saccharum,Annual,365,250,75,100,6.0,7.5,20,35,1000,2000,70.0,3.5
+20,Onion,Red Onion,Rabi,120,100,50,80,6.0,7.5,13,24,350,750,15.0,12
+21,Onion,White Onion,Rabi,110,95,48,75,6.2,7.8,15,26,400,800,14.0,15
+22,Garlic,Allium,Rabi,150,80,40,60,6.0,7.0,10,20,300,600,8.0,80
+23,Chili,Red Chili,Kharif,120,100,50,75,6.0,7.5,20,35,600,1200,2.5,120
+24,Chili,Green Chili,Kharif,90,90,45,70,6.2,7.8,22,37,650,1300,12.0,25
+25,Turmeric,Curcuma,Kharif,240,80,40,120,6.0,7.5,20,35,1000,2250,8.0,150
+26,Ginger,Zingiber,Kharif,210,70,35,100,5.5,6.5,22,30,1200,2500,12.0,80
+27,Groundnut,Arachis,Kharif,120,25,50,75,6.0,7.0,20,30,500,1250,2.2,70
+28,Sunflower,Helianthus,Rabi,90,60,30,40,6.0,7.5,20,25,400,700,1.8,45
+29,Sesame,Sesamum,Kharif,90,50,25,35,6.0,7.0,25,35,400,650,0.8,120
+30,Mustard,Brassica,Rabi,100,80,40,30,6.0,7.5,10,25,300,650,1.2,65
+31,Safflower,Carthamus,Rabi,120,60,30,25,6.5,7.5,15,25,300,600,1.0,85
+32,Castor,Ricinus,Kharif,150,40,20,30,6.0,7.5,20,35,500,1000,2.5,55
+33,Bajra,Pearl Millet,Kharif,75,80,40,40,6.5,8.5,25,35,250,750,2.0,28
+34,Jowar,Sorghum,Kharif,100,100,50,50,6.0,8.0,26,35,400,1000,2.8,25
+35,Ragi,Finger Millet,Kharif,120,50,25,25,5.0,7.0,20,27,500,1000,2.5,35
+36,Barley,Hordeum,Rabi,120,75,40,50,6.0,7.5,12,20,300,650,2.8,22
+37,Oats,Avena,Rabi,90,60,30,40,6.0,7.0,10,18,400,800,3.5,45
+38,Maize,Zea Mays,Kharif,85,160,80,70,6.0,7.0,21,27,600,1200,7.5,18
+39,Black Gram,Vigna Mungo,Kharif,75,20,40,30,6.0,7.5,25,35,600,1000,1.2,85
+40,Green Gram,Vigna Radiata,Kharif,65,25,50,40,6.5,7.5,27,35,300,750,0.8,95
+41,Pigeon Pea,Cajanus,Kharif,150,40,60,30,6.0,7.5,26,30,600,1000,1.8,65
+42,Chickpea,Cicer,Rabi,120,25,60,30,6.0,7.5,20,30,300,650,2.2,55
+43,Lentil,Lens,Rabi,110,30,60,25,6.0,7.5,18,25,300,650,1.5,75
+44,Field Pea,Pisum,Rabi,90,40,80,40,6.0,7.0,15,20,400,800,2.0,45
+45,Cowpea,Vigna,Kharif,75,30,50,50,5.5,6.5,25,35,750,1250,1.5,55
+46,Horse Gram,Macrotyloma,Rabi,120,20,40,25,6.0,8.0,25,35,300,750,1.0,48
+47,Niger,Guizotia,Kharif,100,40,20,20,5.5,7.0,20,30,1000,1500,0.6,85
+48,Linseed,Linum,Rabi,100,50,25,25,6.0,7.5,10,25,450,750,0.8,95
+49,Coriander,Coriandrum,Rabi,90,50,25,50,6.5,7.5,20,25,400,650,1.2,120
+50,Fenugreek,Trigonella,Rabi,120,40,30,40,6.0,7.0,15,25,400,700,2.0,85

@@ -1,0 +1,15 @@
+{
+  "short_name": "AgriTech",
+  "name": "AgriTech - Fertilizer Recommendation System",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#22c55e",
+  "background_color": "#ffffff"
+}

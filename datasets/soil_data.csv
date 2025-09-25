@@ -1,0 +1,51 @@
+soil_id,location,state,district,ph,nitrogen,phosphorus,potassium,organic_matter,moisture,temperature,soil_type,season
+1,Kurnool,Andhra Pradesh,Kurnool,7.2,85,45,120,2.1,35,28,Red Soil,Kharif
+2,Guntur,Andhra Pradesh,Guntur,6.8,92,52,98,2.8,42,26,Black Soil,Rabi
+3,Krishna,Andhra Pradesh,Krishna,6.5,78,38,105,1.9,48,29,Alluvial,Kharif
+4,Warangal,Telangana,Warangal,7.0,88,41,115,2.3,38,27,Red Soil,Rabi
+5,Nizamabad,Telangana,Nizamabad,6.9,95,48,88,2.6,45,25,Black Soil,Kharif
+6,Karimnagar,Telangana,Karimnagar,7.1,82,44,102,2.2,40,28,Red Soil,Rabi
+7,Medak,Telangana,Medak,6.7,90,39,95,2.4,43,26,Black Soil,Kharif
+8,Rangareddy,Telangana,Rangareddy,7.3,76,46,108,1.8,36,29,Red Soil,Rabi
+9,Nalgonda,Telangana,Nalgonda,6.6,89,42,112,2.5,41,27,Black Soil,Kharif
+10,Mahbubnagar,Telangana,Mahbubnagar,7.4,84,37,98,2.0,39,30,Red Soil,Rabi
+11,Adilabad,Telangana,Adilabad,6.8,93,49,106,2.7,44,25,Black Soil,Kharif
+12,Khammam,Telangana,Khammam,6.9,87,43,118,2.1,37,28,Alluvial,Rabi
+13,Anantapur,Andhra Pradesh,Anantapur,7.5,79,35,92,1.7,33,31,Red Soil,Kharif
+14,Chittoor,Andhra Pradesh,Chittoor,6.4,91,47,104,2.9,46,24,Black Soil,Rabi
+15,Cuddapah,Andhra Pradesh,Cuddapah,7.2,85,40,100,2.2,38,29,Red Soil,Kharif
+16,Nellore,Andhra Pradesh,Nellore,6.7,88,45,115,2.4,42,27,Alluvial,Rabi
+17,Prakasam,Andhra Pradesh,Prakasam,7.0,83,38,96,2.0,35,30,Red Soil,Kharif
+18,Srikakulam,Andhra Pradesh,Srikakulam,6.5,94,51,109,2.8,47,25,Black Soil,Rabi
+19,Vizianagaram,Andhra Pradesh,Vizianagaram,6.8,86,44,103,2.3,40,28,Alluvial,Kharif
+20,Visakhapatnam,Andhra Pradesh,Visakhapatnam,6.9,89,46,111,2.5,43,26,Red Soil,Rabi
+21,East Godavari,Andhra Pradesh,East Godavari,6.6,92,48,107,2.6,45,27,Alluvial,Kharif
+22,West Godavari,Andhra Pradesh,West Godavari,7.1,81,42,99,2.1,39,29,Black Soil,Rabi
+23,Bangalore Rural,Karnataka,Bangalore Rural,6.8,87,45,105,2.4,41,26,Red Soil,Kharif
+24,Mysore,Karnataka,Mysore,7.0,90,43,112,2.2,38,28,Black Soil,Rabi
+25,Hassan,Karnataka,Hassan,6.7,85,47,98,2.7,44,25,Alluvial,Kharif
+26,Mandya,Karnataka,Mandya,6.9,88,41,108,2.3,40,27,Red Soil,Rabi
+27,Tumkur,Karnataka,Tumkur,7.2,83,39,95,2.0,36,30,Black Soil,Kharif
+28,Kolar,Karnataka,Kolar,6.5,91,49,114,2.8,46,24,Red Soil,Rabi
+29,Chitradurga,Karnataka,Chitradurga,7.3,79,36,89,1.9,34,31,Alluvial,Kharif
+30,Bellary,Karnataka,Bellary,7.1,86,44,101,2.1,37,29,Black Soil,Rabi
+31,Bijapur,Karnataka,Bijapur,6.8,89,46,116,2.5,42,26,Red Soil,Kharif
+32,Gulbarga,Karnataka,Gulbarga,7.0,84,42,93,2.2,39,28,Black Soil,Rabi
+33,Raichur,Karnataka,Raichur,6.6,92,48,110,2.6,45,25,Alluvial,Kharif
+34,Bidar,Karnataka,Bidar,6.9,87,40,97,2.3,41,27,Red Soil,Rabi
+35,Bagalkot,Karnataka,Bagalkot,7.4,82,38,106,1.8,35,30,Black Soil,Kharif
+36,Dharwad,Karnataka,Dharwad,6.7,90,45,113,2.4,43,26,Alluvial,Rabi
+37,Gadag,Karnataka,Gadag,7.2,85,43,99,2.1,38,29,Red Soil,Kharif
+38,Haveri,Karnataka,Haveri,6.8,88,47,104,2.7,44,25,Black Soil,Rabi
+39,Uttara Kannada,Karnataka,Uttara Kannada,6.5,93,49,118,2.8,47,24,Alluvial,Kharif
+40,Dakshina Kannada,Karnataka,Dakshina Kannada,6.9,86,41,91,2.2,40,28,Red Soil,Rabi
+41,Udupi,Karnataka,Udupi,7.0,89,44,107,2.5,42,27,Black Soil,Kharif
+42,Chikmagalur,Karnataka,Chikmagalur,6.6,84,46,102,2.3,39,26,Alluvial,Rabi
+43,Kodagu,Karnataka,Kodagu,6.8,91,48,115,2.6,45,25,Red Soil,Kharif
+44,Shimoga,Karnataka,Shimoga,7.1,87,42,96,2.0,37,29,Black Soil,Rabi
+45,Davangere,Karnataka,Davangere,6.9,83,40,109,2.4,41,28,Alluvial,Kharif
+46,Chickballapur,Karnataka,Chickballapur,7.3,90,45,103,2.1,38,30,Red Soil,Rabi
+47,Ramanagara,Karnataka,Ramanagara,6.7,85,43,111,2.7,43,26,Black Soil,Kharif
+48,Chamarajanagar,Karnataka,Chamarajanagar,6.8,88,47,98,2.2,40,27,Alluvial,Rabi
+49,Yadgir,Karnataka,Yadgir,7.2,82,39,105,1.9,36,29,Red Soil,Kharif
+50,Koppal,Karnataka,Koppal,7.0,89,44,112,2.5,42,28,Black Soil,Rabi
