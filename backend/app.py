@@ -15,12 +15,12 @@ from PIL import Image
 load_dotenv()
 
 app = Flask(__name__)
-# Configure CORS to allow requests from the frontend
+# Configure CORS to allow all origins for development
 CORS(app, resources={
-    r"/api/*": {
-        "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
+    r"/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
     }
 })
 
