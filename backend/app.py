@@ -11,6 +11,13 @@ from dotenv import load_dotenv
 from io import BytesIO
 import base64
 from PIL import Image
+import sys
+import torch
+
+# Add the backend directory to the path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from pest_detection.model import get_pest_detector
+from pest_detection.utils import preprocess_image, is_leaf_image
 
 load_dotenv()
 
@@ -449,19 +456,21 @@ def avg_soil_for_location(query: str):
         }
 
 def simple_leaf_diagnosis(image: Image.Image):
-    """Very lightweight heuristic-based pest/disease signal from leaf image."""
+    """Legacy function for backward compatibility."""
     try:
-        img = image.convert('RGB').resize((256, 256))
-        arr = np.array(img)
-        mean_rgb = arr.reshape(-1, 3).mean(axis=0)
-        r, g, b = mean_rgb
-        brownish = r > 120 and g < 110 and b < 110
-        pale = g < 90 and r < 90
-        if brownish:
-            return {"label": "suspected_leaf_rust", "confidence": 0.62, "advice": "Remove affected leaves, apply fungicide (mancozeb) if spreading."}
-        if pale:
-            return {"label": "possible_n_deficiency", "confidence": 0.58, "advice": "Consider split N application and soil test confirmation."}
-        return {"label": "healthy_or_uncertain", "confidence": 0.51, "advice": "Monitor regularly; upload clearer close-up for better detection."}
+        # Use the new model for prediction
+        detector = get_pest_detector()
+        result = detector.predict(image)
+        
+        if result['status'] == 'success':
+            pred = result['prediction']
+            return {
+                "label": pred['class'],
+                "confidence": pred['confidence'],
+                "advice": pred['advice']
+            }
+        else:
+            return {"label": "error", "confidence": 0, "advice": result.get('message', 'Prediction error')}
     except Exception as e:
         return {"label": "error", "confidence": 0.0, "advice": str(e)}
 
@@ -837,15 +846,99 @@ def weather_alerts():
 
 @app.route('/api/pest-detect', methods=['POST'])
 def pest_detect():
+    print("\n=== New Pest Detection Request ===")
     try:
+        print("Checking for image in request...")
         if 'image' not in request.files:
-            return jsonify({"success": False, "error": "No image file found (field 'image')"}), 400
+            error_msg = "No image file found (field 'image')"
+            print(f"Error: {error_msg}")
+            return jsonify({"success": False, "error": error_msg, "prediction": None}), 400
+        
+        # Get the uploaded file
         file = request.files['image']
-        img = Image.open(file.stream)
-        result = simple_leaf_diagnosis(img)
-        return jsonify({"success": True, "prediction": result})
+        print(f"Received file: {file.filename}")
+        
+        # Check if the file is an image (supporting most common image formats)
+        allowed_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp', '.tiff', '.tif')
+        if not file.filename.lower().endswith(allowed_extensions):
+            error_msg = f"Invalid file type. Supported formats: {', '.join(ext for ext in allowed_extensions)}"
+            print(f"Error: {error_msg}")
+            return jsonify({"success": False, "error": error_msg, "prediction": None}), 400
+        
+        # Open and preprocess the image
+        try:
+            print("Opening and converting image...")
+            img = Image.open(file.stream).convert('RGB')
+            print(f"Image opened successfully. Size: {img.size}, Mode: {img.mode}")
+            
+            # Check if the image is likely a leaf
+            print("Checking if image is a leaf...")
+            is_leaf, leaf_message = is_leaf_image(img)
+            print(f"Leaf check result: {is_leaf} - {leaf_message}")
+            
+            if not is_leaf:
+                # Use the detailed message from the leaf detection
+                error_msg = leaf_message if leaf_message else "The uploaded image doesn't appear to be a plant leaf. Please upload a clear image of a plant leaf."
+                print(f"Leaf check failed: {error_msg}")
+                return jsonify({
+                    "success": False,
+                    "error": error_msg,
+                    "prediction": None
+                }), 400
+                
+            # Preprocess the image
+            print("Preprocessing image...")
+            processed_img = preprocess_image(img)
+            print("Image preprocessing completed")
+            
+            # Get predictions
+            print("Initializing detector...")
+            detector = get_pest_detector()
+            print("Running prediction...")
+            result = detector.predict(processed_img)
+            print(f"Prediction result: {result}")
+            
+            if result['status'] == 'error':
+                error_msg = f"Prediction error: {result.get('message', 'Unknown error')}"
+                print(f"Error: {error_msg}")
+                return jsonify({
+                    "success": False,
+                    "error": error_msg,
+                    "prediction": None
+                }), 400
+                
+            # Return the prediction in the expected format
+            response = {
+                "success": True,
+                "error": None,
+                "prediction": {
+                    "class": result['prediction']['class'],
+                    "confidence": result['prediction']['confidence'],
+                    "advice": result['prediction']['advice']
+                }
+            }
+            print(f"Returning successful response: {response}")
+            return jsonify(response)
+            
+        except Exception as e:
+            import traceback
+            error_trace = traceback.format_exc()
+            print(f"Error processing image: {str(e)}\n{error_trace}")
+            return jsonify({
+                "success": False,
+                "error": f"Error processing image: {str(e)}",
+                "prediction": None
+            }), 400
+            
     except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 400
+        import traceback
+        error_trace = traceback.format_exc()
+        print(f"Unexpected error: {str(e)}\n{error_trace}")
+        return jsonify({
+            "success": False,
+            "error": f"An unexpected error occurred: {str(e)}",
+            "prediction": None
+        }), 500
 
 
 @app.route('/api/market-prices', methods=['GET'])
